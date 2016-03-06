@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo adduser --system --quiet --shell=/bin/bash --home=/opt/odoo --gecos 'odoo' --group odoo
-sudo mkdir /etc/odoo 
-sudo mkdir /var/log/odoo/
+sudo mkdir /etc/odoo && sudo mkdir /var/log/odoo/
 sudo apt-get update 
 sudo apt-get upgrade -y 
 sudo apt-get install postgresql postgresql-server-dev-9.3 build-essential python-imaging python-lxml python-ldap python-dev libldap2-dev libsasl2-dev npm nodejs git python-setuptools libxml2-dev libxslt1-dev libjpeg-dev python-pip gdebi -y
